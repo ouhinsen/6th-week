@@ -11700,6 +11700,30 @@ fieldset:disabled .btn {
   }
 }
 
+.home-top {
+  height: 100vh;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+
+.home-top .row {
+  padding: 205px 0px;
+}
+
+.home-top .banner {
+  padding: 47px 80px;
+  border: 1px solid #fff;
+}
+
+.home-top .square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
 .gradient-y {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#62db54), to(#09acf5));
   background-image: -o-linear-gradient(top, #62db54, #09acf5);
