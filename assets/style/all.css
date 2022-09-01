@@ -11701,7 +11701,6 @@ fieldset:disabled .btn {
 }
 
 .home-top {
-  height: 100vh;
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
