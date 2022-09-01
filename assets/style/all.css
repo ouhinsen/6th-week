@@ -27,6 +27,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-graybg: #2d2d2d;
+  --bs-graytext: #adb5bd;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3604,6 +3605,47 @@ fieldset:disabled .btn {
   border-color: #2d2d2d;
 }
 
+.btn-graytext {
+  color: #000;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.btn-graytext:hover {
+  color: #000;
+  background-color: #b9c0c7;
+  border-color: #b5bcc4;
+}
+
+.btn-check:focus + .btn-graytext, .btn-graytext:focus {
+  color: #000;
+  background-color: #b9c0c7;
+  border-color: #b5bcc4;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(147, 154, 161, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(147, 154, 161, 0.5);
+}
+
+.btn-check:checked + .btn-graytext,
+.btn-check:active + .btn-graytext, .btn-graytext:active, .btn-graytext.active,
+.show > .btn-graytext.dropdown-toggle {
+  color: #000;
+  background-color: #bdc4ca;
+  border-color: #b5bcc4;
+}
+
+.btn-check:checked + .btn-graytext:focus,
+.btn-check:active + .btn-graytext:focus, .btn-graytext:active:focus, .btn-graytext.active:focus,
+.show > .btn-graytext.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(147, 154, 161, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(147, 154, 161, 0.5);
+}
+
+.btn-graytext:disabled, .btn-graytext.disabled {
+  color: #000;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
 .btn-outline-primary {
   color: #62db54;
   border-color: #62db54;
@@ -3907,6 +3949,40 @@ fieldset:disabled .btn {
 
 .btn-outline-graybg:disabled, .btn-outline-graybg.disabled {
   color: #2d2d2d;
+  background-color: transparent;
+}
+
+.btn-outline-graytext {
+  color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.btn-outline-graytext:hover {
+  color: #000;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.btn-check:focus + .btn-outline-graytext, .btn-outline-graytext:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(173, 181, 189, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(173, 181, 189, 0.5);
+}
+
+.btn-check:checked + .btn-outline-graytext,
+.btn-check:active + .btn-outline-graytext, .btn-outline-graytext:active, .btn-outline-graytext.active, .btn-outline-graytext.dropdown-toggle.show {
+  color: #000;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.btn-check:checked + .btn-outline-graytext:focus,
+.btn-check:active + .btn-outline-graytext:focus, .btn-outline-graytext:active:focus, .btn-outline-graytext.active:focus, .btn-outline-graytext.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(173, 181, 189, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(173, 181, 189, 0.5);
+}
+
+.btn-outline-graytext:disabled, .btn-outline-graytext.disabled {
+  color: #adb5bd;
   background-color: transparent;
 }
 
@@ -5587,6 +5663,16 @@ fieldset:disabled .btn {
   color: #161616;
 }
 
+.alert-graytext {
+  color: #686d71;
+  background-color: #eff0f2;
+  border-color: #e6e9eb;
+}
+
+.alert-graytext .alert-link {
+  color: #53575a;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6065,6 +6151,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #1b1b1b;
   border-color: #1b1b1b;
+}
+
+.list-group-item-graytext {
+  color: #686d71;
+  background-color: #eff0f2;
+}
+
+.list-group-item-graytext.list-group-item-action:hover, .list-group-item-graytext.list-group-item-action:focus {
+  color: #686d71;
+  background-color: #d7d8da;
+}
+
+.list-group-item-graytext.list-group-item-action.active {
+  color: #fff;
+  background-color: #686d71;
+  border-color: #686d71;
 }
 
 .btn-close {
@@ -7290,6 +7392,14 @@ fieldset:disabled .btn {
   color: #242424;
 }
 
+.link-graytext {
+  color: #adb5bd;
+}
+
+.link-graytext:hover, .link-graytext:focus {
+  color: #bdc4ca;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -7700,6 +7810,10 @@ fieldset:disabled .btn {
 
 .border-graybg {
   border-color: #2d2d2d !important;
+}
+
+.border-graytext {
+  border-color: #adb5bd !important;
 }
 
 .border-white {
@@ -8619,6 +8733,10 @@ fieldset:disabled .btn {
   color: #2d2d2d !important;
 }
 
+.text-graytext {
+  color: #adb5bd !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -8677,6 +8795,10 @@ fieldset:disabled .btn {
 
 .bg-graybg {
   background-color: #2d2d2d !important;
+}
+
+.bg-graytext {
+  background-color: #adb5bd !important;
 }
 
 .bg-body {
@@ -11721,6 +11843,14 @@ fieldset:disabled .btn {
   width: 10px;
   height: 10px;
   background-color: #fff;
+}
+
+.introduction {
+  padding: 80px 0px;
+}
+
+.introduction .card-body {
+  padding: 48px 0px;
 }
 
 .gradient-y {
