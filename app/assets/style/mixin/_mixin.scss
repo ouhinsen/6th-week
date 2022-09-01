@@ -19,3 +19,8 @@
   background-clip: text;
   color: transparent;
 }
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
