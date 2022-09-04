@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="./assets/style/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap" rel="stylesheet">
+
       
     
   </head>
@@ -38,8 +48,8 @@
 
     
 <div class="home-top">
-    <div class=" row justify-content-center">
-        <div class="col-md-6 container">
+    <div class=" row me-1 ms-1">
+        <div class="col-md-6 container ">
           <div class="banner text-center position-relative">
             <div class="square position-absolute top-0 start-0 translate-middle"></div>
             <div class="square position-absolute top-0 start-100 translate-middle"></div>
@@ -58,48 +68,195 @@
       </div>
   </div>
 </div>
-<!--以上為 home-benner-->
+<!--以上為 home-banner-->
 <div class="introduction bg-graybg">
-    <div class="container ">
-      <div class="row align-items-center">
-       <div class="col-3 text-white"><h3>手把手帶你<br>親自到家教到會</h3></div>
+  <div class="container">
     
-        
-        <div class="text-center card-body col-3">
-            <a class="text-decoration-none link-graytext " href="#"><span class="material-icons fs-1 pb-4">
-                code
-                </span>
-            <p class="fs-7">超過 100 種專業課程</p>
-            <p>學習標準化的電腦形式語言<br> 培養運算思維和邏輯素養</p></a>
-            
-        </div>
-        <div class="text-center card-body col-3"><a class="text-decoration-none link-graytext"href="#"><span class="material-icons fs-1 pb-4">
-            rocket_launch
-            </span>
-        <p class="fs-7">高效學習</p>
-        <p>客製化專屬課表<br> 讓學習變簡單</p></a>
-            
-        </div>
-        <div class="text-center card-body col-3">
-            <a class="text-decoration-none link-graytext" href="#"><span class="material-icons fs-1 pb-4">
-                place
-                </span>
-            <p class="fs-7">指定地點</p>
-            <p>專業老師到你指定的地點<br> 一對一高效學習</p></a>
-            
-        </div>
-      </div>
+   <ul class="row list-unstyled align-items-center  justify-content-between">
+    <li class="col-lg-3 ">
+      <div class="intro-title ">
+        <h2>手把手帶你 <br> 親自到家教到會</h2>
+        <div class="underline border border-primary border-2 "></div>
 
-      
-   </div>
+       
+      </div>
+    </li>
+    <li  class="col-lg-3 ">
+      <div class="intro-item text-center p-0  py-6">
+        <span class="material-icons fs-1 pb-4">
+          code
+          </span>
+        <h5>超過 100 種專業課程</h4>
+        <p>學習標準化的電腦形式語言<br> 培養運算思維和邏輯素養</p>
+      </div>
+    </li>
+    <li class="col-lg-3 ">
+      <div class="intro-item text-center p-0 py-6">
+        <span class="material-icons fs-1 pb-4">
+          rocket_launch
+          </span>
+        <h5>高效學習</h4>
+        <p>客製化專屬課表<br> 讓學習變簡單</p>
+      </div>
+    </li>
+    <li class="col-lg-3 ">
+      <div class="intro-item text-center p-0 py-6">
+        <span class="material-icons fs-1 pb-4">
+          place
+          </span>
+        <h5>指定地點</h4>
+        <p>專業老師到你指定的地點<br> 一對一高效學習</p>
+      </div>
+    </li>
+  </ul>
+
 </div>
+   </div>
+   <!--以上為introduction-->
+<div class="lesson bg-deepdark">
+  <div class="container py-6"> 
+    <div class="lesson-title "><h3 class=" text-white text-center">預期上課流程</h3>
+    <div class="container underline  border border-primary border-2">
+      </div></div>
+    
+    <ul class="row list-unstyled pt-7 justify-content-between align-items-center">
+      <li class="col-lg-3 lesson-item text-white py-4">
+        <div class="pt-5 pb-4 ps-5 pe-6 position-relative border border-light " >
+        <h2 class="fs-1 fw-bold position-absolute translate-middle top-0 ms-4 bg-deepdark text-primary">01</h2>
+        <h4>預約</h4>
+        <p>線上預約指定課程與老師<br> 由老師安排專屬課程</p></div>
+      </li>
+      <li class="col-lg-3 lesson-item text-white py-4">
+        <div class="pt-5 pb-4 ps-5 pe-6 position-relative border border-light  ">
+          <h2 class="fs-1 fw-bold position-absolute translate-middle top-0 ms-4 bg-deepdark text-primary">02</h2>
+        <h4>付款</h4>
+        <p>支援各種支付方式<br> 提供12期分期付款</p></div>
+      </li>
+      <li class="col-lg-3 lesson-item text-white py-4">
+        <div class="pt-5 pb-4 ps-5 pe-6 position-relative border border-light  ">
+        <h2 class="fs-1 fw-bold position-absolute translate-middle top-0 ms-4 bg-deepdark text-primary">03</h2>
+        <h4>上課</h4>
+        <p>地點由您指定<br> 密集性一對一教學</p></div>
+      </li> 
+      <li class="col-lg-3 lesson-item text-white py-4">
+        <div class="pt-5 pb-4 ps-5 pe-6 position-relative border border-light ">
+        <h2 class="fs-1 fw-bold position-absolute translate-middle top-0 ms-4 bg-deepdark text-primary">04</h2>
+        <h4>提供滿意度</h4>
+        <p>提供課程滿意度及回饋<br> 讓我們持續成長與進步</p></div>
+      </li>
+    </ul>
+  </div>
+</div>   
+<!--以上為lesson-->
+<div class="programming bg-graybg">
+  <div class=" pt-7 pb-6">
+    <h2 class="text-white text-center">你想要學習的程式，都在這裡</h2>
+    <div class="container underline border-bottom border-primary border-2"></div>
+  </div>
+  
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper pb-7">
+      <div class="swiper-slide text-center pt-4">JavaScript</div>
+      <div class="swiper-slide  text-center pt-4">HTML/CSS</div>
+      <div class="swiper-slide  text-center pt-4">SQL</div>
+      <div class="swiper-slide  text-center pt-4">Java</div>
+      <div class="swiper-slide  text-center pt-4">Bash/Shell</div>
+      <div class="swiper-slide  text-center pt-4">Python</div>
+      <div class="swiper-slide  text-center pt-4">PHP</div>
+      <div class="swiper-slide  text-center pt-4">C++</div>
+      <div class="swiper-slide  text-center pt-4">C#</div>
+    </div>
+   
+  </div>
+</div>
+<!--以上為programming swiper-->
+<div class="hot bg-black">
+  <h2 class="text-center text-white pt-7">熱門推薦課程</h2>
+  <div class="container underline border-bottom border-primary border-2">
+   
+  </div>
+  
+  <div class="container pt-6">
+  <ul class="row align-items-center list-unstyled">
+    <li class="hot-card col-lg-3">
+      <div class="bg-deepdark border-0 px-4 py-4 p-0">
+
+      <a class="text-decoration-none" href="#">
+        <div class="text-center">
+          <img class="rounded-circle" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/teacher01.jpg?raw=true" alt="teacher01">
+      <p class="text-white pt-2" >Belinda</p></div>
+      <h5 class="text-white pt-5">基礎前端 - HTML</h5>
+      <h6 class="pt-5">前端語言</h6>
+      <div class="price">
+        <p class="text-white">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+        <span></span>
+      </div></a></div>
+    </li>
+    <li class="hot-card col-lg-3">
+      <div class="bg-deepdark border-0 px-4 py-4 p-0">
+
+      <a class="text-decoration-none" href="#">
+        <div class="text-center">
+      <img class="rounded-circle" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/teacher02.jpg?raw=true" alt="teacher02">
+      <p class="text-white pt-2" >Guava</p></div>
+      <h5 class="text-white pt-4">2022 Python 全攻略｜從入門到實務</h5>
+      <h6 class="pt-5">後端語言</h6>
+      <div class="price">
+        <p class="text-white">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
+        <span></span>
+      </div></a></div>
+    </li>
+    <li class="hot-card col-lg-3">
+      <div class="bg-deepdark border-0 px-4 py-4 p-0">
+      <a class="text-decoration-none" href="#">
+        <div class="text-center">
+      <img class="rounded-circle" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/teacher03.jpg?raw=true" alt="teacher03">
+      <p class="text-white pt-2">Joe</p></div>
+      <h5 class="text-white pt-4">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+      <h6 class="pt-5">行動應用開發</h6>
+      <div class="price">
+        <p class="text-white">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
+        <span></span>
+      </div></a></div>
+    </li>
+    <li class="hot-card col-lg-3">
+      <div class="bg-deepdark border-0 px-4 py-4 p-0">
+      <a class="text-decoration-none" href="#">
+        <div class="text-center">
+      <img class="rounded-circle" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/teacher04.jpg?raw=true" alt="teacher04">
+      <p class="text-white pt-2">Lina</p></div>
+      <h5 class="text-white pt-4">Linux 零基礎七天入門｜入門到實務</h5>
+      <h6 class="pt-5">作業系統與伺服器</h6>
+      <div class="price">
+        <p class="text-white">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
+        <span></span>
+      </div></a></div>
+    </li>
+  </ul>
+</div>
+</div>
+
 
     <footer class="footer bg-graybg">
       <div class="container"><p class="text-white-50 text-center">Coding Home © 2022 All Rights Reserved</p></div>
       
       
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
